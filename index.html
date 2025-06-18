@@ -30,13 +30,13 @@
     <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-18">
-                <div class="flex items-center space-x-2"> 
-                    <img src="Picture/Logo.png" alt="Logo" class="w-15 h-15">
-                    <span class="text-gray-700 font-medium text-lg">QR Code Generator</span> 
+                <div class="flex items-center space-x-5"> 
+                    <img src="Picture/Logo.png" alt="Logo" class="w-12 h-12 rounded-xl">
+                    <span class="text-blue-900 font-medium text-lg">QR Code Generator</span> 
                 </div>
                 <div class="flex justify-between space-x-5 m-2">
-                    <a href="https://www.instagram.com/guide_.nagisa/" class="text-gray-700 font-medium">รายงานปัญหา</a>
-                    <a href="https://l.instagram.com/?u=https%3A%2F%2Fbjchan.my.canva.site%2Fguidenagisa%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAafHJxLvHQMMFHx2WFuqwO4kkO0MRmUZc8pRKP56Ds37Do_-Drg9j9bxx-N2nQ_aem_TweUEeYz1Jya547oPB4E-Q&e=AT3JqHFcHZYPzBAtZZrLHdd-ZnrX6lfEVLb27q9uk194HPUtDj4updjGMWtMZNeCDIyCc9JHBVLpWIdNFLH-i9K1C8r3ClNsH9zlA7g" class="text-gray-700 font-medium">เกี่ยวกับ</a>
+                    <a href="https://www.instagram.com/guide_.nagisa/" class="text-gray-800 hover:text-blue-900 font-medium transition-all duration-200">รายงานปัญหา</a>
+                    <a href="https://bjchan.my.canva.site/guidenagisa" class="text-gray-800 hover:text-blue-900 font-medium transition-all duration-200">เกี่ยวกับ</a>
                 </div>
             </div>
         </div>
@@ -45,10 +45,13 @@
     <!-- ส่วนหลักทั้งหมด ดูดีๆก่อนแก้ไข -->
     <div class="max-w-md mx-auto px-4 py-8">
         
+        <div>
+            <img src="Picture/Banner.png" class="w-full rounded-2xl border border-gray-300 mb-6"
+        </div>
         <!-- ตรงใส่ลิ้ง -->
         <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-6 transition-all duration-300 hover:shadow-md">
-            <h2 class="text-gray-800 text-2xl font-medium mb-1">Enter your link here</h2>
-            <h2 class="text-gray-800 text-xl font-medium mb-4">ใส่ลิ้งของคุณ</h2>
+            <h2 class="text-blue-900 text-2xl font-medium mb-1">Enter your link here</h2>
+            <h2 class="text-gray-800 text-xl font-medium mb-4">ใส่ลิ้งที่ต้องการของคุณ</h2>
             <div class="space-y-4">
                 <input 
                     type="url" 
@@ -59,16 +62,16 @@
                 >
                 <button 
                     onclick="generateQRCode()" 
-                    class="w-full bg-slate-700 hover:bg-slate-800 text-white font-medium py-3 rounded-xl transition-all duration-200 transform hover:scale-[0.95] active:scale-95"
+                    class="w-full bg-blue-900 hover:bg-blue-950 text-white font-medium py-4 rounded-xl transition-all duration-200 transform hover:scale-[0.95] active:scale-95"
                 >
-                    สร้างลิ้งของคุณ
+                    สร้างคิวอาร์โค้ดของคุณ
                 </button>
             </div>
         </div>
 
         <!-- ตรงแสดงผล qr code -->
         <div id="qr-code-container" class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-6 transition-all duration-300 hover:shadow-md hidden">
-            <h2 class="text-gray-800 text-2xl font-medium mb-1">Your Qr Code</h2>
+            <h2 class="text-blue-900 text-2xl font-medium mb-1">Your Qr Code</h2>
             <h2 class="text-gray-800 text-xl font-medium mb-4">คิวอาร์โค้ดของคุณ</h2>
             <div class="flex justify-center mb-4">
                 <div class="bg-gray-100 p-4 rounded-xl">
@@ -78,7 +81,7 @@
             <button 
                 id="downloadLink" 
                 onclick="downloadQRCode()"
-                class="w-full bg-slate-700 hover:bg-slate-800 text-white font-medium py-4 rounded-xl transition-all duration-200 transform hover:scale-[0.95] active:scale-95"
+                class="w-full bg-blue-900 hover:bg-blue-950 text-white font-medium py-4 rounded-xl transition-all duration-200 transform hover:scale-[0.95] active:scale-95"
             >
                 ดาวน์โหลด Qr Code
             </button>
